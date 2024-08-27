@@ -7,6 +7,10 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "theme-color", content: "white" },
+        {
+          name: "google-site-verification",
+          content: "nc0pKffQdhm679g_eXEQhjK-NzBM8ZbyFQLR9ZMeJtc",
+        },
       ],
       htmlAttrs: {
         "data-bs-theme": "light",
@@ -16,11 +20,7 @@ export default defineNuxtConfig({
 
   appConfig: {
     umami: {
-      id: "",
       ignoreLocalhost: true,
-    },
-    icon: {
-      mode: "svg",
     },
   },
 
@@ -33,6 +33,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/fonts",
     "@nuxt/icon",
+    "@nuxtjs/sitemap",
   ],
 
   colorMode: {
