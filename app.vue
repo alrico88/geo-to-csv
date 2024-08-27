@@ -6,3 +6,9 @@ div
     nuxt-page
     the-credits
 </template>
+
+<style>
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+</style>
