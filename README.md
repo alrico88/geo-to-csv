@@ -1,19 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Geo to CSV
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Geo to CSV is an open-source web tool for converting GeoJSON and KML files into CSV format. The tool allows you to easily extract feature properties and geometries, which are represented in Well-Known Text (WKT) format, or as latitude and longitude for point features.
+
+## Features
+- **GeoJSON to CSV**: Convert GeoJSON files to CSV, including feature properties and geometries as WKT.
+- **GeoJSON Points to CSV**: Extract only point features from GeoJSON files, with latitude and longitude columns.
+- **KML to CSV**: Convert KML files to CSV, including feature properties and geometries as WKT.
+- **Flattening Nested Properties**: Automatically flattens nested properties for easier analysis and CSV compatibility.
+
+## Built with
+
+- [Nuxt](https://nuxt.com)
+- [@tmcw/togeojson](https://www.npmjs.com/package/@tmcw/togeojson)
+- [PapaParse](https://www.npmjs.com/package/papaparse)
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
 pnpm install --shamefully-hoist
 ```
 
@@ -22,7 +27,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Production
@@ -30,13 +35,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
