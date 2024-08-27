@@ -66,9 +66,7 @@ async function handleFileChange(e: Event) {
   }
 
   try {
-    const parsedText = JSON.parse(await readAsText(f[0]));
-
-    text.value = fmt.Serialize(parsedText) as string;
+    text.value = (await readAsText(f[0])) as string;
   } catch (err) {
     error.value = err as string;
   }
