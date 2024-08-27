@@ -9,7 +9,7 @@
           | Geo to CSV
       .lead.fw-normal Easily convert GeoJSON & KML files to CSV. Preserve Data properties and get Geometries as WKT.
 
-  .row.g-4.pb-4
+  .row.row-cols-1.row-cols-sm-3.g-4.pb-4
     .col
       b-card.h-100
         .hstack.gap-2.mb-3.align-items-center

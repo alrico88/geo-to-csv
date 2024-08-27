@@ -1,6 +1,6 @@
 <template lang="pug">
 .container.py-2
-  b-navbar.bg-light.rounded.mb-2(:variant="navVariant")
+  b-navbar.bg-light.rounded.mb-2(:variant="navVariant", toggleable="lg")
     b-navbar-brand.fw-bold(to="/")
       .hstack.gap-1.align-items-center
         img.rounded(src="/pwa-512x512.png", height="30")

@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.vstack.gap-2
   template(v-if="is.emptyStringOrWhitespace(result)")
     b-alert.mb-0(variant="warning", :model-value="true") #[icon(name="bi:exclamation-diamond-fill")] {{ placeholder }}
   template(v-else)
