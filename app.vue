@@ -4,4 +4,5 @@ div
   nuxt-loading-indicator
   nuxt-layout
     nuxt-page
+    the-credits
 </template>

@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
+  extends: ["nuxt-umami"],
   app: {
     head: {
-      title: "nuxt3-boilerplate",
+      title: "Geo to CSV",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -12,35 +13,38 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  appConfig: {
+    umami: {
+      id: "",
+      ignoreLocalhost: true,
+    },
+    icon: {
+      mode: "svg",
+    },
+  },
+
   css: ["@/assets/main.scss"],
+
   modules: [
-    "nuxt-icon",
     "@vueuse/nuxt",
-    [
-      "@pinia/nuxt",
-      {
-        autoImports: ["defineStore", "storeToRefs"],
-      },
-    ],
     "@vite-pwa/nuxt",
     "@bootstrap-vue-next/nuxt",
     "@nuxtjs/color-mode",
-    "@nuxtjs/google-fonts",
+    "@nuxt/fonts",
+    "@nuxt/icon",
   ],
+
   colorMode: {
     dataValue: "bs-theme",
     storageKey: "nuxt-color-mode",
   },
-  googleFonts: {
-    families: {
-      "Source Sans Pro": true,
-    },
-  },
+
   pwa: {
     registerType: "prompt",
     manifest: {
-      name: "nuxt3-boilerplate",
-      description: "CHANGE THIS",
+      name: "Geo to CSV",
+      description: "Tools to convert from GeoJSON or KML to CSV",
       theme_color: "white",
       icons: [
         {
