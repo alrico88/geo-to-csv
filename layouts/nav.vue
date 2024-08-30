@@ -1,6 +1,6 @@
 <template lang="pug">
 .container.py-2
-  b-navbar.bg-light.rounded.mb-2(:variant="navVariant", toggleable="lg")
+  b-navbar.rounded.mb-2(:variant="navVariant", toggleable="lg")
     b-navbar-brand.fw-bold(to="/")
       .hstack.gap-1.align-items-center
         img.rounded(src="/pwa-512x512.png", height="30")
@@ -19,10 +19,20 @@
 </template>
 
 <script setup lang="ts">
+import type { BaseColorVariant } from "bootstrap-vue-next";
+
 const colorMode = useColorMode();
 
-const navVariant = computed(() =>
-  colorMode.value !== "dark" ? "light" : "dark"
+const navVariant = ref<keyof BaseColorVariant>("dark");
+
+watch(
+  () => colorMode.value,
+  (val) => {
+    val !== "dark" ? "light" : "dark";
+  },
+  {
+    immediate: true,
+  }
 );
 
 const links = [
