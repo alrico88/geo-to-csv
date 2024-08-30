@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         { name: "theme-color", content: "white" },
         {
           name: "google-site-verification",
-          content: "nc0pKffQdhm679g_eXEQhjK-NzBM8ZbyFQLR9ZMeJtc",
+          content: "59SjuFurmHYTNR2dAhY3Ndx6lQi17mlwR-OZZBYwRnQ",
         },
       ],
       htmlAttrs: {
