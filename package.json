@@ -44,12 +44,12 @@
   },
   "dependencies": {
     "@sindresorhus/is": "^7.0.0",
-    "@tmcw/togeojson": "^5.8.1",
+    "@tmcw/togeojson": "^7.1.2",
     "@vueuse/core": "^11.0.3",
     "@vueuse/nuxt": "^11.0.3",
     "@xmldom/xmldom": "^0.8.10",
     "array-fm": "^1.0.0",
-    "bootstrap": "5.3.3",
+    "bootstrap": "5.3.8",
     "codemirror": "^6.0.1",
     "file-saver": "^2.0.5",
     "flat": "^6.0.1",
@@ -59,7 +59,7 @@
     "papaparse": "^5.4.1",
     "promise-file-reader": "^1.0.3",
     "vue-codemirror": "^6.1.1",
-    "wkt-parser-helper": "^4.2.0"
+    "wkt-parser-helper": "^7.1.0"
   },
   "license": "MIT"
 }

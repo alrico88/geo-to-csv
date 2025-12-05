@@ -4,7 +4,7 @@ import type {
   GeoJsonProperties,
   Point,
 } from "geojson";
-import { convertToWK } from "wkt-parser-helper";
+import { geojsonToWkt } from "wkt-parser-helper";
 import Papa from "papaparse";
 import { filterAndMap } from "array-fm";
 const { unparse } = Papa;
@@ -21,7 +21,7 @@ export function geojsonToCsv(geojson: GeoJSON): string {
   return unparse(
     normalizeAsFeatureCollection(geojson).features.map((feature) => ({
       ...flattenProps(feature.properties),
-      wkt: convertToWK(feature),
+      wkt: geojsonToWkt(feature),
     })),
     {
       header: true,
